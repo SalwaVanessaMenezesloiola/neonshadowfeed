@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload de Imagem</title>
+</head>
+
+<body>
+    <h1>Upload de Imagem</h1>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <label for="image">Escolha uma imagem:</label>
+        <input type="file" id="image" name="image" required>
+        <button type="submit">Enviar Imagem</button>
+    </form>
+
+    <div id="responseMessage"></div>
+
+    <script>
+        // Captura o evento de envio do formulário
+        document.getElementById('uploadForm').addEventListener('submit', async function (e) {
+            e.preventDefault();  // Evita que a página seja recarregada
+
+            // Verifica se a imagem foi selecionada
+            const imageInput = document.getElementById('image');
+            if (!imageInput.files.length) {
+                document.getElementById('responseMessage').innerHTML = 'Erro: Nenhuma imagem selecionada!';
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('image', imageInput.files[0]);
+
+            try {
+                const response = await fetch('http://localhost:3001/upload', {
+                    method: 'POST',
+                    body: formData,
+                });
+
+                if (!response.ok) {
+                    // Se a resposta não for ok, exibe o erro
+                    const errorData = await response.json();
+                    document.getElementById('responseMessage').innerHTML = `Erro: ${errorData.error}`;
+                    return;
+                }
+
+                const data = await response.json();
+
+                // Exibe a resposta do servidor
+                document.getElementById('responseMessage').innerHTML = `Imagem enviada com sucesso! Nome do arquivo: ${data.filename}`;
+            } catch (error) {
+                // Exibe o erro se o fetch falhar
+                document.getElementById('responseMessage').innerHTML = `Erro ao enviar imagem: ${error.message}`;
+                console.error('Erro no fetch:', error);  // Detalhes do erro no console
+            }
+        });
+    </script>
+</body>
+
+</html>

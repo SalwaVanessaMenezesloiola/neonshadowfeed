@@ -1,6 +1,6 @@
 # NeonShadowFeed
 
-**NeonShadowFeed** é um protótipo de aplicativo que permite o compartilhamento seguro de conteúdos importantes, com foco em resistência digital e design cyberpunk.
+NeonShadowFeed é um protótipo de aplicativo que permite o compartilhamento seguro de conteúdos relevantes, como questões humanitárias e temas globais — incluindo a causa palestina —, com foco em superar a censura algorítmica que limita a visibilidade dessas causas, principalmente no Instagram. Nosso objetivo é garantir que informações importantes alcancem seu público de forma eficiente e sem restrições.
 
 ---
 

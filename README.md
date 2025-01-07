@@ -1,3 +1,8 @@
+<div align="center">
+  <img src="https://raw.githubusercontent.com/SalwaVanessaMenezesloiola/Silenced-Voices/main/Screen%20Shot%202025-01-07%20at%2010.45.49.png" alt="Imagem de Fundo" style="width: 100%; height: auto; border-radius: 10px;">
+</div>
+
+
 # NeonShadowFeed
 
 NeonShadowFeed é um protótipo de aplicativo que permite o compartilhamento seguro de conteúdos relevantes, como questões humanitárias e temas globais — incluindo a causa palestina —, com foco em superar a censura algorítmica que limita a visibilidade dessas causas, principalmente no Instagram. Nosso objetivo é garantir que informações importantes alcancem seu público de forma eficiente e sem restrições.
@@ -5,16 +10,10 @@ NeonShadowFeed é um protótipo de aplicativo que permite o compartilhamento seg
 ---
 
 ## Objetivo
-O objetivo do NeonShadowFeed é criar uma plataforma para compartilhar informações de forma segura, evitando a censura algorítmica.
+O objetivo do NeonShadowFeed é criar estratégias para compartilhar informações de forma segura, evitando a censura algorítmica.
 
 ---
 
-## Funcionalidades Planejadas
-- Upload de imagens codificadas.
-- Geração de links para páginas externas.
-- Design futurista e cyberpunk.
-
----
 
 ## Como Contribuir
 1. Faça um fork deste repositório.
@@ -40,3 +39,42 @@ Este projeto está licenciado sob a licença MIT. Consulte o arquivo [LICENSE](L
 
 ## Contato
 Se você tiver dúvidas ou sugestões, sinta-se à vontade para abrir uma issue ou entrar em contato.
+
+
+# NeonShadowFeed
+
+<div dir="rtl">
+
+## 👋 مرحبًا، أنا @salwasalamsalwa
+
+### حول المشروع  
+**NeonShadowFeed** هو نموذج لتطبيق يسمح بمشاركة المحتوى ذي الصلة بشكل آمن، مثل القضايا الإنسانية والمواضيع العالمية — بما في ذلك القضية الفلسطينية — مع التركيز على التغلب على الرقابة الخوارزمية التي تحد من وصول هذه القضايا، خاصة على إنستغرام. هدفنا هو ضمان وصول المعلومات المهمة إلى جمهورها بشكل فعال ودون قيود.
+
+---
+
+### الهدف  
+هدف **NeonShadowFeed** هو إنشاء استراتيجيات لمشاركة المعلومات بشكل آمن، مع تجنب الرقابة الخوارزمية.
+
+---
+
+### كيفية المساهمة  
+1. قم بعمل fork لهذا المستودع.
+2. أنشئ فرعًا جديدًا لميزتك (`git checkout -b feature/اسم-الميزة`).
+3. قم بإضافة تغييراتك (`git commit -m 'إضافة ميزة جديدة'`).
+4. ادفع التغييرات إلى الفرع (`git push origin feature/اسم-الميزة`).
+5. افتح طلب دمج (Pull Request).
+
+---
+
+### التقنيات المستخدمة  
+- **Backend**: Node.js (أو Python، حسب الاختيار النهائي).
+- **Frontend**: React.js.
+- **قاعدة البيانات**: SQLite (في البداية).
+- **التشفير**: CryptoJS.
+
+---
+
+### الرخصة  
+هذا المشروع مرخص تحت رخصة MIT. راجع ملف [LICENSE](LICENSE) لمزيد من التفاصيل.
+
+</div>

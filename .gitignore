@@ -10,6 +10,9 @@ frontend/node_modules/
 # Ignorar a pasta backend/node_modules
 backend/node_modules/
 
+# Ignorar a pasta de upload de imagens
+uploads/
+
 # Ignorar arquivos de build (se aplicável)
 frontend/build/
 frontend/dist/
